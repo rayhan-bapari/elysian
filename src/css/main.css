@@ -14,7 +14,7 @@
 
 /* Header Area */
 header {
-    @apply flex justify-between items-center my-8 mx-[30px] py-[14px] px-6 lg:px-10 bg-gray2 h-[90px] rounded-[70px];
+    @apply flex justify-between items-center my-8 mx-4 lg:mx-[30px] py-[14px] px-6 lg:px-10 bg-gray2 h-[90px] rounded-[70px] relative;
 }
 
 .logo {
@@ -39,6 +39,26 @@ header {
 
 .menu__btn {
     @apply text-xl text-gray inline-flex lg:hidden;
+}
+
+.mobile__menu {
+    @apply top-full left-0 w-full bg-white2/80 backdrop-blur-md absolute flex flex-col justify-center items-center gap-4 rounded-[40px] overflow-hidden h-0;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    animation: showMenu 0.5s ease-in-out;
+}
+
+.mobile__menu.show {
+    @apply h-[320px] py-6;
+    z-index: 999;
+}
+
+.mobile__nav ul {
+    @apply flex flex-col items-center gap-4;
+}
+
+.mobile__menu--btn {
+    @apply inline-flex justify-center items-center gap-[10px] h-[50px] px-[15px] py-[10px] rounded-[40px] border border-offwhite bg-white2 text-gray text-base font-normal leading-[120%];
 }
 
 /* Hero Area */
@@ -68,11 +88,11 @@ header {
 }
 
 .input__group input {
-    @apply w-full h-[60px] rounded-[40px] bg-white2 relative pl-[24px];
+    @apply w-full h-[40px] lg:h-[60px] rounded-[40px] bg-white2 relative pl-4 lg:pl-[24px];
 }
 
 .quote__btn {
-    @apply absolute right-0 w-[150px] h-full rounded-[40px] bg-gray text-white2 text-base font-semibold leading-[150%];
+    @apply absolute right-0 w-[100px] lg:w-[150px] h-full rounded-[40px] bg-gray text-white2 text-sm font-normal lg:text-base lg:font-semibold leading-[150%];
 }
 .hero__image {
     @apply pl-8 lg:w-[50%] lg:h-[100%] xl:w-auto xl:h-auto lg:-mb-12 flex justify-end;
