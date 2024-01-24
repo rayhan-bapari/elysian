@@ -9,6 +9,7 @@
         font-family: "Poppins", sans-serif;
         max-width: 1536px;
         margin: 0 auto;
+        overflow-x: hidden;
     }
 }
 
