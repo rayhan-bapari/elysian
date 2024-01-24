@@ -12,3 +12,28 @@ menuBtn.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
     }
 });
+
+let swiper = new Swiper(".projectsSlider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+        },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

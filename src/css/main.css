@@ -64,7 +64,7 @@ header {
 
 /* Hero Area */
 .home__area {
-    background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+    background: linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
     @apply flex flex-col-reverse lg:flex-row lg:justify-between rounded-[15px] mx-[30px];
 }
 
@@ -131,4 +131,108 @@ header {
 
 .process__desc {
     @apply text-black text-base font-normal leading-[120%];
+}
+
+/* Projects Area */
+.project__area {
+    @apply my-8 mx-4 lg:mx-[30px] pt-[80px];
+}
+
+.project__header--config {
+    @apply flex justify-between items-center relative;
+}
+
+.projects__slider--navigation {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    right: 70px !important;
+    left: auto !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    @apply size-[30px] lg:size-[45px] text-white rounded-full bg-black !important;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.09))
+        drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.05)) drop-shadow(0px 20px 8px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 31px 9px rgba(0, 0, 0, 0));
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+    @apply text-sm lg:text-[20px] !important;
+}
+
+.project__header--subtitle {
+    @apply text-black text-base font-normal leading-[120%];
+}
+
+.project__header--title {
+    @apply text-black text-[30px] lg:text-[40px] xl:text-[50px] font-semibold leading-[120%] capitalize;
+}
+
+.projects {
+    @apply mt-[45px];
+}
+
+.project__card1,
+.project__card2,
+.project__card3 {
+    @apply h-[440px] rounded-[14px] border border-offwhite/45 bg-white2;
+}
+
+.project__card1 .project__img {
+    @apply w-full h-[265px] rounded-[14px] object-cover;
+    background: linear-gradient(
+            116deg,
+            rgba(193, 222, 232, 0.7) 9.86%,
+            rgba(255, 255, 255, 0) 52.13%,
+            rgba(251, 217, 185, 0.7) 97.99%
+        ),
+        url("../../src/assets/images/projects/project-1.png") lightgray 50% / cover no-repeat;
+}
+.project__card2 .project__img {
+    @apply w-full h-[265px] rounded-[14px] object-cover;
+    background: linear-gradient(
+            116deg,
+            rgba(193, 222, 232, 0.7) 9.86%,
+            rgba(255, 255, 255, 0) 52.13%,
+            rgba(251, 217, 185, 0.7) 97.99%
+        ),
+        url("../../src/assets/images/projects/project-2.png") lightgray 50% / cover no-repeat;
+}
+.project__card3 .project__img {
+    @apply w-full h-[265px] rounded-[14px] object-cover;
+    background: linear-gradient(
+            116deg,
+            rgba(193, 222, 232, 0.7) 9.86%,
+            rgba(255, 255, 255, 0) 52.13%,
+            rgba(251, 217, 185, 0.7) 97.99%
+        ),
+        url("../../src/assets/images/projects/project-3.png") lightgray 50% / cover no-repeat;
+}
+
+.project__card--content {
+    @apply pt-[24px] pl-[24px] flex justify-start items-start flex-col gap-[17px];
+}
+
+.project__card--title {
+    @apply text-base text-[21px] font-semibold leading-[120%] capitalize;
+}
+
+.project__card--desc {
+    @apply text-base text-[16px] font-normal leading-[150%];
+}
+
+.ratings i {
+    @apply text-[16.8px] h-[17.32px] text-[#F59914];
+}
+
+.ratings i:nth-child(5) {
+    @apply text-[#9B9B9B];
 }
