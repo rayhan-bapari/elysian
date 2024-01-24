@@ -446,6 +446,8 @@ video {
 
 body {
   font-family: "Poppins", sans-serif;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 
 *, ::before, ::after {
@@ -632,18 +634,40 @@ header {
 /* Hero Area */
 
 .home__area {
+  background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
   margin-left: 30px;
   margin-right: 30px;
-  height: 617px;
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column-reverse;
   border-radius: 15px;
-  background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+}
+
+@media (min-width: 1024px) {
+  .home__area {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .hero__content {
-  width: 40%;
-  padding-top: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 45px;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero__content {
+    width: 40%;
+    padding-top: 50px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__content {
+    padding-top: 90px;
+  }
 }
 
 .hero__subtitle {
@@ -657,11 +681,23 @@ header {
 
 .hero__title {
   margin-top: 15px;
-  font-size: 67px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 120%;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 67px;
+  }
 }
 
 .hero__desc {
@@ -677,7 +713,19 @@ header {
 .input__group {
   position: relative;
   margin-top: 24px;
-  width: 440px;
+  width: 300;
+}
+
+@media (min-width: 1024px) {
+  .input__group {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input__group {
+    width: 440px;
+  }
 }
 
 .input__group input {
@@ -704,4 +752,23 @@ header {
   line-height: 150%;
   --tw-text-opacity: 1;
   color: rgb(254 254 254 / var(--tw-text-opacity));
+}
+
+.hero__image {
+  padding-left: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .hero__image {
+    margin-bottom: -3rem;
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__image {
+    height: auto;
+    width: auto;
+  }
 }

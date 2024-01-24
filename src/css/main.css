@@ -7,6 +7,8 @@
 @layer base {
     body {
         font-family: "Poppins", sans-serif;
+        max-width: 1536px;
+        margin: 0 auto;
     }
 }
 
@@ -37,15 +39,12 @@ header {
 
 /* Hero Area */
 .home__area {
-    @apply mx-[30px];
-    height: 617px;
-    flex-shrink: 0;
-    border-radius: 15px;
     background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+    @apply flex flex-col-reverse lg:flex-row lg:justify-between rounded-[15px] mx-[30px];
 }
 
 .hero__content {
-    @apply w-[40%] pt-[90px] pl-[45px];
+    @apply lg:w-[40%] pt-[30px] pb-[30px] lg:pt-[50px] xl:pt-[90px] pl-[45px] pr-6 lg:pr-0;
 }
 
 .hero__subtitle {
@@ -53,7 +52,7 @@ header {
 }
 
 .hero__title {
-    @apply text-black text-[67px] font-semibold leading-[120%] mt-[15px];
+    @apply text-black text-[30px] lg:text-[40px] xl:text-[67px] font-semibold leading-[120%] mt-[15px];
 }
 
 .hero__desc {
@@ -61,7 +60,7 @@ header {
 }
 
 .input__group {
-    @apply w-[440px] relative mt-[24px];
+    @apply w-[300] lg:w-[360px] xl:w-[440px] relative mt-[24px];
 }
 
 .input__group input {
@@ -70,4 +69,7 @@ header {
 
 .quote__btn {
     @apply absolute right-0 w-[150px] h-full rounded-[40px] bg-gray text-white2 text-base font-semibold leading-[150%];
+}
+.hero__image {
+    @apply pl-8 lg:w-[50%] lg:h-[100%] xl:w-auto xl:h-auto lg:-mb-12;
 }
