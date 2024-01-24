@@ -43,3 +43,31 @@ header {
     border-radius: 15px;
     background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
 }
+
+.hero__content {
+    @apply w-[40%] pt-[90px] pl-[45px];
+}
+
+.hero__subtitle {
+    @apply text-black text-base font-normal leading-[120%];
+}
+
+.hero__title {
+    @apply text-black text-[67px] font-semibold leading-[120%] mt-[15px];
+}
+
+.hero__desc {
+    @apply text-black text-base font-normal leading-[150%] mt-[25px];
+}
+
+.input__group {
+    @apply w-[440px] relative mt-[24px];
+}
+
+.input__group input {
+    @apply w-full h-[60px] rounded-[40px] bg-white2 relative pl-[24px];
+}
+
+.quote__btn {
+    @apply absolute right-0 w-[150px] h-full rounded-[40px] bg-gray text-white2 text-base font-semibold leading-[150%];
+}
