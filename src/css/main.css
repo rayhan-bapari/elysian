@@ -98,3 +98,37 @@ header {
 .hero__image {
     @apply pl-8 lg:w-[50%] lg:h-[100%] xl:w-auto xl:h-auto lg:-mb-12 flex justify-end;
 }
+
+/* Process Area */
+.process__header--config {
+    @apply flex flex-col justify-between items-center gap-4 my-8 mx-4 lg:mx-[30px] pt-[80px];
+}
+
+.process__header--subtitle {
+    @apply text-black text-base font-normal leading-[120%];
+}
+
+.process__header--title {
+    @apply text-black text-[30px] lg:text-[40px] xl:text-[50px] font-semibold leading-[120%] capitalize;
+}
+
+.process {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-[80px] my-8 mx-4 lg:mx-[60px] mt-[45px];
+}
+
+.process__box {
+    @apply flex flex-col justify-start items-start gap-4 rounded-[40px] px-[30px] py-[30px] lg:px-[40px] lg:py-[40px];
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.process img {
+    @apply size-[65px];
+}
+
+.process__title {
+    @apply text-black text-[28px] font-semibold leading-[120%] capitalize;
+}
+
+.process__desc {
+    @apply text-black text-base font-normal leading-[120%];
+}
