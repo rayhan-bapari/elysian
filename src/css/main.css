@@ -14,7 +14,7 @@
 
 /* Header Area */
 header {
-    @apply flex justify-between items-center my-8 mx-[30px] py-[14px] px-10 bg-gray2 h-[90px] rounded-[70px];
+    @apply flex justify-between items-center my-8 mx-[30px] py-[14px] px-6 lg:px-10 bg-gray2 h-[90px] rounded-[70px];
 }
 
 .logo {
@@ -22,7 +22,7 @@ header {
 }
 
 .navbar {
-    @apply flex justify-center items-center h-[60px] rounded-[40px] bg-white2 px-[20px] py-[22px];
+    @apply hidden lg:flex justify-center items-center h-[60px] rounded-[40px] bg-white2 px-[20px] py-[22px];
 }
 
 .navbar ul {
@@ -34,7 +34,11 @@ header {
 }
 
 .header__btn {
-    @apply inline-flex justify-center items-center gap-[10px] h-[50px] px-[15px] py-[10px] rounded-[40px] border border-offwhite bg-white2 text-gray text-base font-normal leading-[120%];
+    @apply hidden lg:inline-flex justify-center items-center gap-[10px] h-[50px] px-[15px] py-[10px] rounded-[40px] border border-offwhite bg-white2 text-gray text-base font-normal leading-[120%];
+}
+
+.menu__btn {
+    @apply text-xl text-gray inline-flex lg:hidden;
 }
 
 /* Hero Area */
@@ -71,5 +75,5 @@ header {
     @apply absolute right-0 w-[150px] h-full rounded-[40px] bg-gray text-white2 text-base font-semibold leading-[150%];
 }
 .hero__image {
-    @apply pl-8 lg:w-[50%] lg:h-[100%] xl:w-auto xl:h-auto lg:-mb-12;
+    @apply pl-8 lg:w-[50%] lg:h-[100%] xl:w-auto xl:h-auto lg:-mb-12 flex justify-end;
 }

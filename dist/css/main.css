@@ -566,8 +566,15 @@ header {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
 
 .logo {
@@ -579,7 +586,7 @@ header {
 }
 
 .navbar {
-  display: flex;
+  display: none;
   height: 60px;
   align-items: center;
   justify-content: center;
@@ -590,6 +597,12 @@ header {
   padding-right: 20px;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+  }
 }
 
 .navbar ul {
@@ -608,7 +621,7 @@ header {
 }
 
 .header__btn {
-  display: inline-flex;
+  display: none;
   height: 50px;
   align-items: center;
   justify-content: center;
@@ -629,6 +642,26 @@ header {
   line-height: 120%;
   --tw-text-opacity: 1;
   color: rgb(31 31 31 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .header__btn {
+    display: inline-flex;
+  }
+}
+
+.menu__btn {
+  display: inline-flex;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 31 31 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .menu__btn {
+    display: none;
+  }
 }
 
 /* Hero Area */
@@ -755,6 +788,8 @@ header {
 }
 
 .hero__image {
+  display: flex;
+  justify-content: flex-end;
   padding-left: 2rem;
 }
 
