@@ -1,5 +1,8 @@
 const menuBtn = document.querySelector(".menu__btn");
 const mobileMenu = document.querySelector(".mobile__menu");
+const customerValue = document.querySelector(".customer__value");
+const projectsValue = document.querySelector(".projects__value");
+const agentsValue = document.querySelector(".agents__value");
 
 menuBtn.addEventListener("click", () => {
     const isMenuShown = mobileMenu.classList.toggle("show");
@@ -37,3 +40,37 @@ let swiper = new Swiper(".projectsSlider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// customer 80
+// projects 125
+// agents 120
+let customerCounter = 0;
+let projectsCounter = 0;
+let agentsCounter = 0;
+
+const customerInterval = setInterval(() => {
+    if (customerCounter < 80) {
+        customerCounter++;
+        customerValue.innerHTML = customerCounter + "+";
+    } else {
+        clearInterval(customerInterval);
+    }
+}, 20);
+
+const projectsInterval = setInterval(() => {
+    if (projectsCounter < 125) {
+        projectsCounter++;
+        projectsValue.innerHTML = projectsCounter + "+";
+    } else {
+        clearInterval(projectsInterval);
+    }
+}, 20);
+
+const agentsInterval = setInterval(() => {
+    if (agentsCounter < 120) {
+        agentsCounter++;
+        agentsValue.innerHTML = agentsCounter + "+";
+    } else {
+        clearInterval(agentsInterval);
+    }
+}, 20);

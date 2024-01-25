@@ -236,3 +236,78 @@ header {
 .ratings i:nth-child(5) {
     @apply text-[#9B9B9B];
 }
+
+/* About Area */
+.about__area {
+    @apply my-8 mx-4 lg:mx-[30px] pt-[100px];
+}
+
+.about__hedaer--config {
+    @apply max-w-[785px] mx-auto;
+}
+
+.about__header--title {
+    @apply text-black text-center text-[30px] lg:text-[40px] xl:text-[50px] font-semibold leading-[120%] capitalize;
+}
+
+.about__content--area {
+    @apply flex justify-between mt-[45px];
+}
+
+.about__content {
+    @apply w-full max-w-[520px] mt-[34px];
+}
+
+.about__content--title {
+    @apply text-black text-[38px] font-semibold leading-[120%] capitalize;
+}
+
+.about__content--desc {
+    @apply text-black text-base font-normal leading-[150%] mt-[24px];
+}
+
+.button__group {
+    @apply flex justify-start items-start gap-[24px] mt-[45px];
+}
+
+.book__btn {
+    @apply inline-flex justify-center items-center gap-[10px] h-[50px] px-[15px] py-[10px] rounded-[40px] bg-gray text-white2 text-base font-normal leading-[120%];
+}
+
+.learn__btn {
+    @apply inline-flex justify-center items-center gap-[10px] h-[50px] px-[15px] py-[10px] rounded-[40px] border border-offwhite bg-white2 text-gray text-base font-normal leading-[120%];
+}
+
+.about__img {
+    @apply w-full max-w-[550px] relative;
+}
+
+.about__img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        116deg,
+        rgba(193, 222, 232, 0.7) 9.86%,
+        rgba(255, 255, 255, 0) 52.13%,
+        rgba(251, 217, 185, 0.7) 97.99%
+    );
+    border-radius: 14px;
+}
+
+.counter {
+    @apply flex;
+}
+
+.customers__count,
+.projects__count,
+.agents__count {
+    @apply flex flex-col;
+}
+
+.about__img img {
+    border-radius: 14px;
+}
