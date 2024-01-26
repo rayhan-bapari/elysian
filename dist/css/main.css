@@ -444,6 +444,13 @@ video {
   display: none;
 }
 
+html {
+  /* custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #fbd9b9 #fefefe;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1536px;
@@ -720,10 +727,6 @@ body {
 
 .opacity-100 {
   opacity: 1;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow {
