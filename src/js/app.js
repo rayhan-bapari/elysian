@@ -4,6 +4,8 @@ const customerValue = document.querySelector(".customer__value");
 const projectsValue = document.querySelector(".projects__value");
 const agentsValue = document.querySelector(".agents__value");
 const yearsText = document.querySelector("#currentYear");
+const backToTopBtn = document.querySelector("#backToTop");
+
 menuBtn.addEventListener("click", () => {
     const isMenuShown = mobileMenu.classList.toggle("show");
 
@@ -79,3 +81,19 @@ const currentYear = new Date().getFullYear();
 yearsText.innerHTML = currentYear;
 
 AOS.init();
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        backToTopBtn.classList.remove("hidden");
+        backToTopBtn.classList.add("opacity-100");
+    } else {
+        backToTopBtn.classList.add("hidden");
+    }
+});
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
