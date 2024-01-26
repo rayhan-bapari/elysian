@@ -239,7 +239,7 @@ header {
 
 /* About Area */
 .about__area {
-    @apply my-8 mx-4 lg:mx-[30px] pt-[100px];
+    @apply my-8 mx-4 lg:mx-[30px] xl:mx-[100px] pt-[100px];
 }
 
 .about__hedaer--config {
@@ -251,7 +251,7 @@ header {
 }
 
 .about__content--area {
-    @apply flex justify-between mt-[45px];
+    @apply flex flex-col-reverse lg:flex-row lg:justify-between mt-[45px];
 }
 
 .about__content {
@@ -299,13 +299,23 @@ header {
 }
 
 .counter {
-    @apply flex;
+    @apply flex justify-center items-center lg:justify-start lg:items-start flex-wrap gap-[30px] mx-auto mt-[60px];
 }
 
 .customers__count,
 .projects__count,
 .agents__count {
     @apply flex flex-col;
+}
+
+.customer__value,
+.projects__value,
+.agents__value {
+    @apply text-black text-[67px] font-semibold leading-[120%];
+}
+
+.counter__title {
+    @apply text-black text-base font-normal leading-[120%];
 }
 
 .about__img img {
