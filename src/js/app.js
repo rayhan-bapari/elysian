@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector(".mobile__menu");
 const customerValue = document.querySelector(".customer__value");
 const projectsValue = document.querySelector(".projects__value");
 const agentsValue = document.querySelector(".agents__value");
-
+const yearsText = document.querySelector("#currentYear");
 menuBtn.addEventListener("click", () => {
     const isMenuShown = mobileMenu.classList.toggle("show");
 
@@ -74,3 +74,8 @@ const agentsInterval = setInterval(() => {
         clearInterval(agentsInterval);
     }
 }, 20);
+
+const currentYear = new Date().getFullYear();
+yearsText.innerHTML = currentYear;
+
+AOS.init();

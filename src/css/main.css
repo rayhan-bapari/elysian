@@ -321,3 +321,63 @@ header {
 .about__img img {
     border-radius: 14px;
 }
+
+/* Newsletter Area */
+.newsletter__area {
+    @apply h-full lg:h-[460px] flex flex-col-reverse lg:flex-row justify-between items-center my-8 mx-4 lg:mx-[30px] mt-[100px] rounded-[15px];
+    background: url("../assets/images/hero.png"), linear-gradient(90deg, #c1dee8 0%, #fbd9b9 100%);
+}
+
+.newletter__content {
+    @apply w-full lg:w-[45%] pt-[30px] pb-[30px] lg:pt-[50px] xl:pt-[90px] pl-[45px] pr-6 lg:pr-0;
+}
+
+.newsletter__title {
+    @apply text-black text-[30px] lg:text-[40px] xl:text-[50px] font-semibold leading-[120%] mt-[15px];
+}
+
+.newsletter__desc {
+    @apply text-black text-base font-normal leading-[150%] mt-[18px];
+}
+
+.newletter__image {
+    @apply w-full lg:w-[606px] h-[557px];
+}
+
+.newletter__image img {
+    @apply h-full w-full object-cover;
+}
+
+/* Footer Area */
+
+footer {
+    @apply flex justify-between items-center my-8 mx-4 lg:mx-[30px] py-[14px] px-6 lg:px-10 bg-gray2 rounded-[20px] relative;
+}
+
+.footer__area {
+    @apply max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8;
+}
+
+.footer__nav {
+    @apply flex flex-wrap justify-center -mx-5 -my-2;
+}
+
+.footer__nav--list {
+    @apply px-5 py-2;
+}
+
+.footer__nav--link {
+    @apply text-base leading-6 text-gray;
+}
+
+.footer__social--list {
+    @apply flex justify-center mt-8 space-x-6;
+}
+
+.footer__social--link {
+    @apply text-gray;
+}
+
+.footer__social--link i {
+    @apply text-2xl;
+}

@@ -9,12 +9,14 @@
         <link rel="stylesheet" href="src/css/swiper-bundle.min.css" />
         <!-- Main CSS -->
         <link rel="stylesheet" href="dist/css/main.css" />
+        <!-- Aos CSS -->
+        <link rel="stylesheet" href="src/css/aos.css" />
         <!-- FontAwesome CDN CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     </head>
     <body>
         <!-- Header Area -->
-        <header>
+        <header data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
             <div class="logo">
                 <a href="index.html"> <img src="src/assets/images/ELYSIYAN.svg" alt="Elysian" /> </a>
             </div>
@@ -50,7 +52,13 @@
         </header>
         <!-- Hero Area -->
         <section class="home__area">
-            <div class="hero__content">
+            <div
+                class="hero__content"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-once="true"
+            >
                 <h2 class="hero__subtitle">Welcome to Elysian Homes</h2>
                 <h1 class="hero__title">Manage Your Property</h1>
                 <p class="hero__desc">
@@ -61,26 +69,29 @@
                     <button class="quote__btn">Get a Quote</button>
                 </div>
             </div>
-            <div class="hero__image">
+            <div
+                class="hero__image"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-once="true"
+            >
                 <img src="src/assets/images/hero-image.png" alt="" />
             </div>
         </section>
         <!-- Process Area -->
         <section class="process__area">
-            <div class="process__header--config">
-                <h3
-                    class="process__header--subtitle"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                >
-                    Three steps. Three minutes.
-                </h3>
-                <h2 class="process__header--title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                    Everything should be this easy.
-                </h2>
+            <div
+                class="process__header--config"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-once="true"
+            >
+                <h3 class="process__header--subtitle">Three steps. Three minutes.</h3>
+                <h2 class="process__header--title">Everything should be this easy.</h2>
             </div>
-            <div class="process">
+            <div class="process" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
                 <div class="process__box">
                     <img src="src/assets/images/process/qna.svg" alt="Answer questions" />
                     <h2 class="process__title">Answer questions</h2>
@@ -119,7 +130,12 @@
                         Our recent projects
                     </h2>
                 </div>
-                <div class="projects__slider--navigation">
+                <div
+                    class="projects__slider--navigation"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                >
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
@@ -127,7 +143,12 @@
             <div class="projects">
                 <div class="swiper projectsSlider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide project__card1">
+                        <div
+                            class="swiper-slide project__card1"
+                            data-aos="flip-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
+                        >
                             <div class="project__img"></div>
                             <div class="project__card--content">
                                 <h3 class="project__card--title">Sobha Hearland II Villas</h3>
@@ -144,7 +165,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide project__card2">
+                        <div
+                            class="swiper-slide project__card2"
+                            data-aos="flip-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
+                        >
                             <div class="project__img"></div>
                             <div class="project__card--content">
                                 <h3 class="project__card--title">Sobha Hearland II Villas</h3>
@@ -161,7 +187,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide project__card3">
+                        <div
+                            class="swiper-slide project__card3"
+                            data-aos="flip-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
+                        >
                             <div class="project__img"></div>
                             <div class="project__card--content">
                                 <h3 class="project__card--title">Sobha Hearland II Villas</h3>
@@ -178,7 +209,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide project__card1">
+                        <div
+                            class="swiper-slide project__card1"
+                            data-aos="flip-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
+                        >
                             <div class="project__img"></div>
                             <div class="project__card--content">
                                 <h3 class="project__card--title">Sobha Hearland II Villas</h3>
@@ -195,7 +231,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide project__card3">
+                        <div
+                            class="swiper-slide project__card3"
+                            data-aos="flip-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="300"
+                        >
                             <div class="project__img"></div>
                             <div class="project__card--content">
                                 <h3 class="project__card--title">Sobha Hearland II Villas</h3>
@@ -238,11 +279,11 @@
                         Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus
                         scelerisque vehicula ante nunc. Tellus consequat nisl quis nisl justo.
                     </p>
-                    <div class="button__group">
+                    <div class="button__group" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                         <button type="button" class="book__btn">Book Now</button>
                         <button type="button" class="learn__btn">Learn More</button>
                     </div>
-                    <div class="counter">
+                    <div class="counter" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
                         <div class="customers__count">
                             <span class="customer__value"></span>
                             <span class="counter__title">Customers</span>
@@ -259,14 +300,93 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__img">
+                <div class="about__img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                     <img src="src/assets/images/about-img.png" alt="" />
                 </div>
             </div>
         </section>
-        <!-- All Js Files -->
-        <!-- Swiper JS -->
+        <!-- Newsletter Area -->
+        <section class="newsletter__area">
+            <div
+                class="newletter__content"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-once="true"
+            >
+                <h2 class="newsletter__title">Subscribe Our Newsletter</h2>
+                <p class="newsletter__desc">
+                    Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas
+                    faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque
+                    vehicula ante nunc.
+                </p>
+                <div class="input__group">
+                    <input type="text" placeholder="Enter your email" />
+                    <button class="quote__btn">Get a Quote</button>
+                </div>
+            </div>
+            <div
+                class="newletter__image"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-once="true"
+            >
+                <img src="src/assets/images/newsletter.png" alt="" />
+            </div>
+        </section>
+        <!-- Footer Area -->
+        <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+            <div class="footer__area">
+                <nav class="footer__nav">
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> Home </a>
+                    </div>
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> About us </a>
+                    </div>
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> Projects </a>
+                    </div>
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> Agents </a>
+                    </div>
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> Services </a>
+                    </div>
+                    <div class="footer__nav--list">
+                        <a href="#" class="footer__nav--link"> Listings </a>
+                    </div>
+                </nav>
+                <div class="footer__social--list">
+                    <a href="#" class="footer__social--link">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <span class="sr-only">Instagram</span>
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <span class="sr-only">Twitter</span>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <span class="sr-only">Dribbble</span>
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a>
+                </div>
+                <p class="mt-8 text-base leading-6 text-center text-gray-400">
+                    © <span id="currentYear"></span> Elysian Homes. All rights reserved. Developed by Md.Rayhan Bapari
+                </p>
+            </div>
+        </footer>
         <script src="src/js/swiper-bundle.min.js"></script>
+        <script src="src/js/aos.js"></script>
         <!-- Main JS -->
         <script src="src/js/app.js"></script>
     </body>
